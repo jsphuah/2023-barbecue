@@ -12,6 +12,21 @@ function PageTopAnime() {
 	}
 }
 
+// 地図表示
+function initMap() {
+    var location = {lat: 35.64230402765869, lng: 139.7781900268328}; // 目的地の緯度経度
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 16, // ズームレベル
+        center: location // 地図の中心
+    });
+    
+    var marker = new google.maps.Marker({
+        position: location,
+        map: map,
+        title: 'THE BBQ BEACH in TOYOSU' // マーカーのタイトル
+    });
+}
+
 //アコーディオンをクリックした時の動作
 $('.title').on('click', function() {//タイトル要素をクリックしたら
 	$('.box').slideUp(500);//クラス名.boxがついたすべてのアコーディオンを閉じる
