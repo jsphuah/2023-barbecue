@@ -18,7 +18,7 @@
 }
 
 .accordion-area section {
-	border: 1px solid #ccc;
+    border: 1px solid #ccc;
 }
 
 /*アコーディオンタイトル*/
@@ -57,18 +57,18 @@
 /*　closeというクラスがついたら形状変化　*/
 
 .title.close::before{
-	transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 .title.close::after{
-	transform: rotate(-45deg);
+    transform: rotate(-45deg);
 }
 
 /*アコーディオンで現れるエリア*/
 .box {
     display: none;/*はじめは非表示*/
     background: #f3f3f3;
-	margin:0 3% 3% 3%;
+    margin:0 3% 3% 3%;
     padding: 3%;
 }
 
@@ -158,6 +158,37 @@
     color: #666;
 }
 
+/*========= QRのためのCSS ===============*/
+.box .QR-img{
+    background-image:url(../image/QR_sample.png);
+    background-repeat:  no-repeat;
+    width:auto;
+    height:180px;
+}
+
+/*========= 当日プログラムのためのCSS ===============*/
+.program {
+    width: 98%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.program th, td {
+    border: 0px;
+    padding: 6px;
+    text-align: left;
+    vertical-align: top;
+    font-size: 12px;
+}
+
+.program th {
+    background-color: #ffe4e1;
+}
+
+.program td {
+    background-color: #fffafa;
+}
+
 /*========= レイアウトのためのCSS ===============*/
 
 body{
@@ -168,4 +199,33 @@ h2{
     text-align: center;
     margin: 30px 0;
     font-size:2rem;
+}
+
+.name {
+    font-size:1.5rem;
+    font-weight: bold;
+    font-family: "Yu Mincho";
+}
+
+.red {
+    color:red;
+}
+
+.list {
+    font-size: 12px;
+}
+
+.box .seat-img{
+    background-image:url(../image/area_map.png);
+    background-repeat:  no-repeat;
+    width:auto;
+    height:180px;
+}
+
+footer section {
+    text-align: center;
+    margin:0 3% 3% 3%;
+    padding: 3%;
+    font-size:1.2rem;
+    font-family: fantasy;
 }
