@@ -202,6 +202,7 @@ h2{
 }
 
 .name {
+    text-align: center;
     font-size:1.5rem;
     font-weight: bold;
     font-family: "Yu Mincho";
@@ -216,10 +217,7 @@ h2{
 }
 
 .box .seat-img{
-    background-image:url(../image/area_map.png);
-    background-repeat:  no-repeat;
-    width:auto;
-    height:180px;
+    text-align: center;
 }
 
 footer section {
