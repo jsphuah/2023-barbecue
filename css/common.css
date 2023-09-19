@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+/*========= 当日プログラムのためのCSS ===============*/
+.program {
+    width: 98%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.program th, td {
+    border: 0px;
+    padding: 6px;
+    text-align: left;
+    vertical-align: top;
+    font-size: 15px;
+}
+
+.program th {
+    background-color: #ffe4e1;
+}
+
+.program td {
+    background-color: #fffafa;
+}
+
+/*========= レイアウトのためのCSS ===============*/
+
+body{
+    background-image: url("../image/bbq_illus1_half_trans.png");
+}
+
+h2{
+    text-align: center;
+    margin: 30px 0;
+    font-size:2rem;
+}
+
+.red {
+    color:red;
+}
+
+.list {
+    font-size: 14px;
+}
